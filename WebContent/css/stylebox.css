@@ -1,0 +1,218 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+input{
+	font-family: 'Open Sans', sans-serif;
+	border: 1px solid white;
+	border-radius:2px;
+	color: #858585;
+	font-size: 1em;
+	padding: 4px;
+}
+
+input.submeter{
+	font-size: 20px;
+}
+
+p{
+	margin:0;
+}
+
+ul,label{
+	margin:0;
+	padding:0;
+}
+a:hover, a:focus {
+color:black;
+
+}
+/*-----start-header----*/
+i.line{
+	display:block;
+	min-height: 1px;
+	width: 13%;
+	position: absolute;
+	left: 96%;
+	bottom: 48%;
+}
+i.line2{
+	display:block;
+	min-height: 1px;
+	width: 8%;
+	position: absolute;
+	left: 96%;
+	bottom: 48%;
+}
+/* start booking_room */
+.online_reservation{
+	z-index: 999;
+}
+.b_room{
+	display: inline-flex;
+	box-shadow: 0px 0px 4px rgb(97, 97, 97);
+	-webkit-box-shadow: 0px 0px 4px rgb(97, 97, 97);
+	-moz-box-shadow: 0px 0px 4px rgb(97, 97, 97);
+	-o-box-shadow: 0px 0px 4px rgb(97, 97, 97);
+	width: 70%;
+	position:absolute;
+}
+.booking_room {
+	width: 140%;
+	position:absolute;
+	z-index:1;
+}
+.booking_room h4{
+	font-size: 1.5em;
+	color: #202020;
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.booking_room p{
+	font-size: 0.8725em;
+	color: #6b6b6b;
+	line-height: 1.8em;
+}
+.reservation{
+	font-family: 'Open Sans', sans-serif;
+	padding:16px 10px;
+	float: left;
+	width:100%;
+	background: #193149;
+	box-shadow: 2px 26px 37px -12px;
+	border-radius: 4px;
+}
+
+.reservation ul li{
+	float: left;
+	list-style:none;
+}
+.reservation ul li.left{
+	margin-left: 15px;
+}
+.reservation ul li.span1_of_1{
+width: 24.33333%;
+margin-left: 1em;
+}
+.reservation ul li.span1_of_2{
+	width: 9.33333%;
+}
+.reservation ul li.span1_of_3{
+	width: 18.33333%;
+	margin-left: 20px;
+}
+.reservation h5{
+	font-size: 18px;
+	color: #FFD700;
+	text-transform: capitalize;
+	margin-bottom: 6px;
+}
+select {
+	width: 100%;
+	color: #858585;
+	font-size: 0.8725em;
+	padding: 7px;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+	background: #ffffff;
+	border: 1px solid #DFDFDF;
+	border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	-o-border-radius: 9px;
+	
+}
+select option{
+	border: 1px solid #DFDFDF;
+	outline: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.book_date input[type="text"]{
+	width: 100% !important;
+	color: #858585;
+	font-size: 0.8725em;
+	padding: 8px 30px;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+	border: 1px solid #DFDFDF;
+	box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-webkit-box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-moz-box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-o-box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-webkit-appearance: none;
+	border-radius: 9px !important;
+	-webkit-border-radius: 9px !important;
+	-moz-border-radius: 9px !important;
+	-o-border-radius: 9px !important;
+}
+
+.book_date {
+    padding: 0 4px 0 15px;
+    color: #858585;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    background: #ffffff;
+    border: 1px solid #DFDFDF;
+	box-shadow: inset 0 0 2px rgb(236, 236, 236);
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -o-border-radius: 9px;
+   	position: absolute;
+	padding: 2px;
+	font-size: 0.8725em;
+
+}
+
+.date{
+	background:url(../images/icon.png) no-repeat 3% 50% #FFF;
+}
+.date_btn{
+	margin:22px 0 0 0px;
+}
+.date_btn form input[type="submit"] {
+	text-transform:capitalize;
+	font-size: 12px !important;
+	width: 90% !important;
+	background: #FFD700;
+	font-family: 'Open Sans', sans-serif;
+	color: #2A2E33;
+	padding: 8px;
+	border: none;
+	font-size: 14px;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	outline: none;
+	cursor: pointer;
+	font-weight:bold;
+	border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	-o-border-radius: 9px;
+}
+.date_btn form input[type="submit"]:hover{
+	background: #00CCFF;
+}
+
+.date_btn form input[type="submit"] {
+width: 100% !important;
+font-size: 10px;
+}
+
+.book_date input[type="text"] {
+font-size: 0.75em;
+padding: 3px 22px;
+}
+
+.booking-form input[type="submit"]:hover,.booking-form input[type="reset"]:hover  {
+background: #E7CB2C;
+border: 1px solid #E7CB2C;
+}

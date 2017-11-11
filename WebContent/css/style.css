@@ -534,7 +534,8 @@ a.gal:hover img {
 }
 
 #tabs ul li.ui-state-active a {
-	color: #38afe5;
+	color: black;
+	
 }
 
 #tabs ul li:first-child {
@@ -546,6 +547,7 @@ a.gal:hover img {
 	padding: 6px 0 4px;
 	font: 24px/28px 'Pathway Gothic One', sans-serif;
 	text-transform: uppercase;
+	color: black;
 }
 
 .text1 {
