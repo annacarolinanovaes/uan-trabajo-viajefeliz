@@ -28,6 +28,10 @@ th, td {
     text-align: center;
 }
 
+form.data001{
+	padding: 6px;
+}
+
 input{
 	font-family: 'Open Sans', sans-serif;
 	border: 1px solid white;
@@ -44,7 +48,7 @@ input{
 input.texto{
 	border: 1px solid white;
 	border-radius:2px;
-	padding: 7px;
+	padding: 2px;
 }
 
 input.submeter{

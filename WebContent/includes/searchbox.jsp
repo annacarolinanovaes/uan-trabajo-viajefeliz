@@ -18,7 +18,7 @@
 									<li  class="span1_of_1 left">
 										<h5>Fecha Llegada</h5>
 											<div class="book_date">
-												<form>
+												<form class="data001" style="padding: 6px;">
 													<span><img src="<%=request.getContextPath()%>/images/icon.png" alt="" class="icone"/></span>
 													<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">
 												</form>
@@ -27,7 +27,7 @@
 									<li  class="span1_of_1 left">
 										<h5>Fecha Salida</h5>
 											<div class="book_date">
-												<form>
+												<form class="data001" style="padding: 6px;">
 													<span><img src="<%=request.getContextPath()%>/images/icon.png" alt="" class="icone"/></span>
 													<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">
 												</form>

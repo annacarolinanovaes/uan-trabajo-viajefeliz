@@ -10,8 +10,8 @@
 	<link rel="shortcut icon" href="<%=request.getContextPath()%>/images/favicon.ico">
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
 	
-	<link type="text/css" rel="stylesheet" href="<%=request.getContextPath()%>css/JFFormStyle-1.css" />
-	<link rel="stylesheet" href="<%=request.getContextPath()%>css/slider.css">
+	<link type="text/css" rel="stylesheet" href="<%=request.getContextPath()%>/css/JFFormStyle-1.css" />
+	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/slider.css">
 	<script src="<%=request.getContextPath()%>/js/jquery.js"></script>
 	<script src="<%=request.getContextPath()%>/js/jquery-migrate-1.1.1.js"></script>
 	<script src="<%=request.getContextPath()%>/js/superfish.js"></script>
