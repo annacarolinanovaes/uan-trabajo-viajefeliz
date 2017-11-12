@@ -33,18 +33,6 @@ public class CabanaOCasaDaoImpl implements CabanaOCasaDao {
 		}
 		em.persist(x);	
 	}
-/*@Override
-	public MotoTaxista buscar(int cod) {
-		return em.find(MotoTaxista.class, cod);
-	}
-
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<MotoTaxista> buscarTodos() {
-		String jpql = "SELECT x FROM MotoTaxista x";
-		Query query = em.createQuery(jpql);
-		return query.getResultList();
-	}*/
 
 	@Override
 	public CabanaOCasa buscar(int cod) {
@@ -55,7 +43,7 @@ public class CabanaOCasaDaoImpl implements CabanaOCasaDao {
 	@Override
 	public List<CabanaOCasa> buscarTodos() {
 		String jpql = "SELECT x FROM CabanaOCasa x";
-		Query query = em.createQuery(jpql);
+		Query query = em.createQuery(jpql);		
 		return query.getResultList();
 	}
 

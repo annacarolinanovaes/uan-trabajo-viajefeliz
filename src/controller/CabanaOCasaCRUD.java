@@ -68,8 +68,7 @@ public class CabanaOCasaCRUD extends HttpServlet {
 		}
 		
 		else if (cmd.equalsIgnoreCase("listar")) {
-			try {
-
+			try {				
 				request.setAttribute("lista", cabanaocasaServico.buscarTodos());
 				forward = LISTAR;
 			} catch (RuntimeException e) {

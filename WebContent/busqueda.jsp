@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -5,22 +6,22 @@
 	<head>
 	<title>Viaje Feliz | Búsqueda</title>
 	<meta charset="utf-8">
-	<link rel="icon" href="images/favicon.ico">
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="<%=request.getContextPath()%>/images/favicon.ico">
+	<link rel="shortcut icon" href="<%=request.getContextPath()%>/images/favicon.ico">
+	<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
 	
-	<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
-	<link rel="stylesheet" href="css/slider.css">
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery-migrate-1.1.1.js"></script>
-	<script src="js/superfish.js"></script>
-	<script src="js/sForm.js"></script>
-	<script src="js/jquery.jqtransform.js"></script>
-	<script src="js/jquery.equalheights.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/tms-0.4.1.js"></script>
-	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-	<script src="js/jquery.ui.totop.js"></script>
+	<link type="text/css" rel="stylesheet" href="<%=request.getContextPath()%>css/JFFormStyle-1.css" />
+	<link rel="stylesheet" href="<%=request.getContextPath()%>css/slider.css">
+	<script src="<%=request.getContextPath()%>/js/jquery.js"></script>
+	<script src="<%=request.getContextPath()%>/js/jquery-migrate-1.1.1.js"></script>
+	<script src="<%=request.getContextPath()%>/js/superfish.js"></script>
+	<script src="<%=request.getContextPath()%>/js/sForm.js"></script>
+	<script src="<%=request.getContextPath()%>/js/jquery.jqtransform.js"></script>
+	<script src="<%=request.getContextPath()%>/js/jquery.equalheights.js"></script>
+	<script src="<%=request.getContextPath()%>/js/jquery.easing.1.3.js"></script>
+	<script src="<%=request.getContextPath()%>/js/tms-0.4.1.js"></script>
+	<script src="<%=request.getContextPath()%>/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="<%=request.getContextPath()%>/js/jquery.ui.totop.js"></script>
 	<script>
 	$(window).load(function () {
 	    $('.slider')._TMS({
@@ -65,6 +66,7 @@
 			<br />
 			<br />
 			<br />
+			
 			<div class="container_12">
 				<div class="grid_12">
 			      <h3>Búsqueda de casas/cabañas</h3>		
@@ -81,16 +83,18 @@
 							</thead>
 							<tbody>
 								<c:forEach items="${lista}" var="x">
-									<tr>
-										<td>${x.codCasaOCabana}</td>
-										<td>${x.nombreCasaOCabana}</td>
+									
+								 <tr>
+										<td>${x.codCabanaOCasa}</td>
+										<td>${x.nombreCabanaOCasa}</td>
 										<td>${x.cuidadCabanaOCasa}</td>
 										<td>${x.precioDiariaCabanaOCasa}</td>		
 									<td>
 									<a href="<%=request.getContextPath()%>/cliente/CabanaOCasaCRUD?cmd=editar&cod=${x.codCabanaOCasa}">Más</a>							
-										
+									</td>	
 									</tr>
-									
+									 
+									  
 								</c:forEach>
 							</tbody>
 						</table>

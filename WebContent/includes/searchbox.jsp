@@ -1,4 +1,4 @@
-	  <link rel="stylesheet" href="css/stylebox.css">
+	  <link rel="stylesheet" href="<%=request.getContextPath()%>/css/stylebox.css">
 	  <div class="section">
       	<div class="container">
 	  				<div class="online_reservation">
@@ -7,7 +7,7 @@
 							  <div class="reservation">
 								<!---strat-date-piker---->
 									
-									<script src="js/jquery-ui.js"></script>
+									<script src="<%=request.getContextPath()%>/js/jquery-ui.js"></script>
 									<script>
 										$(function() {
 										$( "#datepicker,#datepicker1" ).datepicker();
@@ -19,7 +19,7 @@
 										<h5>Fecha Llegada</h5>
 											<div class="book_date">
 												<form>
-													<span><img src="images/icon.png" alt="" class="icone"/></span>
+													<span><img src="<%=request.getContextPath()%>/images/icon.png" alt="" class="icone"/></span>
 													<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">
 												</form>
 											</div>		
@@ -28,7 +28,7 @@
 										<h5>Fecha Salida</h5>
 											<div class="book_date">
 												<form>
-													<span><img src="images/icon.png" alt="" class="icone"/></span>
+													<span><img src="<%=request.getContextPath()%>/images/icon.png" alt="" class="icone"/></span>
 													<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">
 												</form>
 											</div>					

@@ -150,5 +150,15 @@ public class CabanaOCasa implements Serializable {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "CabanaOCasa [codCabanaOCasa=" + codCabanaOCasa + ", nombreCabanaOCasa=" + nombreCabanaOCasa
+				+ ", ubicacionCabanaOCasa=" + ubicacionCabanaOCasa + ", precioDiariaCabanaOCasa="
+				+ precioDiariaCabanaOCasa + ", fotoCabanaOCasa=" + fotoCabanaOCasa + ", disponibleCabanaOCasa="
+				+ disponibleCabanaOCasa + ", cuidadCabanaOCasa=" + cuidadCabanaOCasa + ", nroBanosCabanaOCasa="
+				+ nroBanosCabanaOCasa + ", nroHabitacionesCabanaOCasa=" + nroHabitacionesCabanaOCasa + "]";
+	}
+	
 	
 }
