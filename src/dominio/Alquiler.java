@@ -9,8 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import Modelo.Cabana;
-import Modelo.Titular;
+
 @Entity
 @Table(name="tb_alquiler")
 
