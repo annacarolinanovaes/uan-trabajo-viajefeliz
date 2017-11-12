@@ -1,2 +1,6 @@
 /META-INF/
 /dominio/
+/servico/
+/impl/
+/dao/
+/controller/

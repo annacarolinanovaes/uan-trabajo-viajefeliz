@@ -34,21 +34,16 @@
 											</div>					
 									</li>
 									 <li class="span1_of_1">
-										 <h5>Room type</h5>
+										 <h5>Ubicación</h5>
 										 <!----------start section_room----------->
-										 <div class="section_room">
-										      <select id="country" onchange="change_country(this.value)" class="frm-field required">
-													<option value="null">Standard Single Room</option>
-													<option value="null">Suite room</option>         
-													<option value="AX">Single room</option>
-													<option value="AX">Double room</option>
-										      </select>
-										 </div>	
+										<div>
+										      <input id="cuidad" type="text" name="Cuidad colombiana" value="" class="frm-field required texto">
+										 </div>
 									 </li>
 									 <li class="span1_of_3">
 											<div class="date_btn">
 												<form>
-													<input class="submeter" type="submit" value="View Prices" />
+													<input class="submeter" type="submit" value="Buscar casas/cabañas" />
 												</form>
 											</div>
 									 </li>

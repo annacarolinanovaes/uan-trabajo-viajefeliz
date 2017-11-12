@@ -4,13 +4,47 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+	}
+
+table {
+	 border-collapse: collapse;
+    width: 90%;
+}
+
+th {
+    height: 50px;
+    
+}
+
+td{
+	padding: 30px;
+}
+
+th, td {
+    text-align: center;
+}
+
 input{
 	font-family: 'Open Sans', sans-serif;
 	border: 1px solid white;
-	border-radius:2px;
+	border-radius: 5px !important;
 	color: #858585;
 	font-size: 1em;
-	padding: 4px;
+}
+
+.back{
+	background-color:white;
+	padding-bottom: 5%;
+}
+
+input.texto{
+	border: 1px solid white;
+	border-radius:2px;
+	padding: 7px;
 }
 
 input.submeter{
@@ -78,7 +112,7 @@ i.line2{
 }
 .reservation{
 	font-family: 'Open Sans', sans-serif;
-	padding:16px 10px;
+	padding:16px 15px;
 	float: left;
 	width:100%;
 	background: #193149;
@@ -153,7 +187,6 @@ select option{
 }
 
 .book_date {
-    padding: 0 4px 0 15px;
     color: #858585;
     outline: none;
     font-family: 'Open Sans', sans-serif;
@@ -165,7 +198,6 @@ select option{
     -moz-border-radius: 9px;
     -o-border-radius: 9px;
    	position: absolute;
-	padding: 2px;
 	font-size: 0.8725em;
 
 }
@@ -209,7 +241,6 @@ font-size: 10px;
 
 .book_date input[type="text"] {
 font-size: 0.75em;
-padding: 3px 22px;
 }
 
 .booking-form input[type="submit"]:hover,.booking-form input[type="reset"]:hover  {

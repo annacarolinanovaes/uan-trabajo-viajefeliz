@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Viaje Feliz | Galería</title>
-<meta charset="utf-8">
-<link rel="icon" href="images/favicon.ico">
-<link rel="shortcut icon" href="images/favicon.ico">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/touchTouch.css">
-<script src="js/jquery.js"></script>
-<script src="js/jquery-migrate-1.1.1.js"></script>
-<script src="js/superfish.js"></script>
-<script src="js/jquery.equalheights.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.ui.totop.js"></script>
-<script src="js/touchTouch.jquery.js"></script>
-<script>
-$(window).load(function () {
-    $().UItoTop({
-        easingType: 'easeOutQuart'
-    });
-});
-$(function () {
-    $('.gallery a.gal').touchTouch();
-});
-</script>
-<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<link rel="stylesheet" media="screen" href="css/ie.css">
-<![endif]-->
-</head>
+	<head>
+	<title>Viaje Feliz | Galería</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/touchTouch.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.1.1.js"></script>
+	<script src="js/superfish.js"></script>
+	<script src="js/jquery.equalheights.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.ui.totop.js"></script>
+	<script src="js/touchTouch.jquery.js"></script>
+	<script>
+	$(window).load(function () {
+	    $().UItoTop({
+	        easingType: 'easeOutQuart'
+	    });
+	});
+	$(function () {
+	    $('.gallery a.gal').touchTouch();
+	});
+	</script>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<link rel="stylesheet" media="screen" href="css/ie.css">
+	<![endif]-->
+	</head>
 	<body>
 	
 	<!--  +++++++++++ INCLUDES HEADER +++++++++++ -->

@@ -56,7 +56,7 @@
 	</head>
 	<body class="page1">
 	<!--  +++++++++++ REFERENCIAS BASICAS DO BOOTSTRAP +++++++++++ -->
-		<%@ include file="/includes/refs-bootstrap-inicio.jsp"%> 
+		
 		
 	<!--  +++++++++++ INCLUDES HEADER +++++++++++ -->
 		<%@ include file="/includes/refs-header.jsp"%> 
@@ -70,15 +70,18 @@
 		<br />
 		
 	      <div class="slider-relative">  
-	      <div style="min-height: 401px; min-width: 255px; left: 80px; width: 255px; position: absolute; top: 41px; height: 401px;" class="TPWdgt0-6nz_hvyyl1k0" id="TPWdgt0-6nz" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$mainPage_DESKTOP.$inlineContent.$TPWdgt0-6nz"><iframe scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="" name="TPWdgt0-6nz" style="display:block;width:100%;height:100%;overflow:hidden;position:absolute;" title="Wix Hotels" aria-label="Wix Hotels" id="TPWdgt0-6nziframe" class="TPWdgt0-6nz_hvyyl1k0iframe" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$mainPage_DESKTOP.$inlineContent.$TPWdgt0-6nz.$https=2//hotels=1wixapps=1net/search-widget=1html?cacheKiller=01510414307563&amp;compId=0TPWdgt0-6nz&amp;deviceType=0desktop&amp;height=0401&amp;instance=0gfi1KO_wG-TKuXMaTjsGPgf4nzUYQuBC6SXsup0DLZI=1eyJpbnN0YW5jZUlkIjoiYjY4ZTFmOWUtZTMxYS00NjgyLWFhZTUtNmFmM2UyOTgxOTk3IiwiYXBwRGVmSWQiOiIxMzVhYWQ4Ni05MTI1LTYwNzQtNzM0Ni0yOWRjNmEzYzliY2YiLCJzaWduRGF0ZSI6IjIwMTctMTEtMTFUMTU6MzE6NDAuNjExWiIsInVpZCI6bnVsbCwiaXBBbmRQb3J0IjoiMTgxLjYwLjE5Ni4xMTIvNTMxMzkiLCJ2ZW5kb3JQcm9kdWN0SWQiOm51bGwsImRlbW9Nb2RlIjpmYWxzZSwib3JpZ2luSW5zdGFuY2VJZCI6IjEzZTE3ZWIxLTBlN2YtZmU0MS0wNjhmLTYxYjlhYjI0MjgyMSIsImFpZCI6IjQ2YTlkZWI0LTljMTgtNDAyNi1iOGRhLTYwNDNiMTdjNTI3YSIsImJpVG9rZW4iOiJlMmY4OTQxZi1iMDJkLTBiODktMWJlZi1mYTE0Njg5MzVkNTUiLCJzaXRlT3duZXJJZCI6IjhhM2U2ZDE2LTczNWUtNDYxOC04YmU3LTk2NDY0M2QyM2ZjNyJ9&amp;locale=0pt&amp;pageId=0mainPage&amp;viewMode=0site&amp;vsi=0b6fb7f4e-66e5-4215-8806-8b9362c7e6f6&amp;width=0255" src="https://hotels.wixapps.net/search-widget.html?cacheKiller=1510414307563&amp;compId=TPWdgt0-6nz&amp;deviceType=desktop&amp;height=401&amp;instance=gfi1KO_wG-TKuXMaTjsGPgf4nzUYQuBC6SXsup0DLZI.eyJpbnN0YW5jZUlkIjoiYjY4ZTFmOWUtZTMxYS00NjgyLWFhZTUtNmFmM2UyOTgxOTk3IiwiYXBwRGVmSWQiOiIxMzVhYWQ4Ni05MTI1LTYwNzQtNzM0Ni0yOWRjNmEzYzliY2YiLCJzaWduRGF0ZSI6IjIwMTctMTEtMTFUMTU6MzE6NDAuNjExWiIsInVpZCI6bnVsbCwiaXBBbmRQb3J0IjoiMTgxLjYwLjE5Ni4xMTIvNTMxMzkiLCJ2ZW5kb3JQcm9kdWN0SWQiOm51bGwsImRlbW9Nb2RlIjpmYWxzZSwib3JpZ2luSW5zdGFuY2VJZCI6IjEzZTE3ZWIxLTBlN2YtZmU0MS0wNjhmLTYxYjlhYjI0MjgyMSIsImFpZCI6IjQ2YTlkZWI0LTljMTgtNDAyNi1iOGRhLTYwNDNiMTdjNTI3YSIsImJpVG9rZW4iOiJlMmY4OTQxZi1iMDJkLTBiODktMWJlZi1mYTE0Njg5MzVkNTUiLCJzaXRlT3duZXJJZCI6IjhhM2U2ZDE2LTczNWUtNDYxOC04YmU3LTk2NDY0M2QyM2ZjNyJ9&amp;locale=pt&amp;pageId=mainPage&amp;viewMode=site&amp;vsi=b6fb7f4e-66e5-4215-8806-8b9362c7e6f6&amp;width=255"></iframe><div id="TPWdgt0-6nzoverlay" class="TPWdgt0-6nz_hvyyl1k0overlay" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$mainPage_DESKTOP.$inlineContent.$TPWdgt0-6nz.$overlay"></div></div>
+	      <div style="min-height: 401px; min-width: 255px; left: 80px; width: 255px; position: absolute; top: 41px; height: 401px;" 
+	      class="TPWdgt0-6nz_hvyyl1k0" id="TPWdgt0-6nz" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$mainPage_DESKTOP.$inlineContent.$TPWdgt0-6nz"><iframe scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="" name="TPWdgt0-6nz" style="display:block;width:100%;height:100%;overflow:hidden;position:absolute;" title="Wix Hotels" aria-label="Wix Hotels" id="TPWdgt0-6nziframe" class="TPWdgt0-6nz_hvyyl1k0iframe" 
+	      data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$mainPage_DESKTOP.$inlineContent.$TPWdgt0-6nz.$https=2//hotels=1wixapps=1net/search-widget=1html?cacheKiller=01510414307563&amp;compId=0TPWdgt0-6nz&amp;deviceType=0desktop&amp;height=0401&amp;instance=0gfi1KO_wG-TKuXMaTjsGPgf4nzUYQuBC6SXsup0DLZI=1eyJpbnN0YW5jZUlkIjoiYjY4ZTFmOWUtZTMxYS00NjgyLWFhZTUtNmFmM2UyOTgxOTk3IiwiYXBwRGVmSWQiOiIxMzVhYWQ4Ni05MTI1LTYwNzQtNzM0Ni0yOWRjNmEzYzliY2YiLCJzaWduRGF0ZSI6IjIwMTctMTEtMTFUMTU6MzE6NDAuNjExWiIsInVpZCI6bnVsbCwiaXBBbmRQb3J0IjoiMTgxLjYwLjE5Ni4xMTIvNTMxMzkiLCJ2ZW5kb3JQcm9kdWN0SWQiOm51bGwsImRlbW9Nb2RlIjpmYWxzZSwib3JpZ2luSW5zdGFuY2VJZCI6IjEzZTE3ZWIxLTBlN2YtZmU0MS0wNjhmLTYxYjlhYjI0MjgyMSIsImFpZCI6IjQ2YTlkZWI0LTljMTgtNDAyNi1iOGRhLTYwNDNiMTdjNTI3YSIsImJpVG9rZW4iOiJlMmY4OTQxZi1iMDJkLTBiODktMWJlZi1mYTE0Njg5MzVkNTUiLCJzaXRlT3duZXJJZCI6IjhhM2U2ZDE2LTczNWUtNDYxOC04YmU3LTk2NDY0M2QyM2ZjNyJ9&amp;locale=0pt&amp;pageId=0mainPage&amp;viewMode=0site&amp;vsi=0b6fb7f4e-66e5-4215-8806-8b9362c7e6f6&amp;width=0255" src="https://hotels.wixapps.net/search-widget.html?cacheKiller=1510414307563&amp;compId=TPWdgt0-6nz&amp;deviceType=desktop&amp;height=401&amp;instance=gfi1KO_wG-TKuXMaTjsGPgf4nzUYQuBC6SXsup0DLZI.eyJpbnN0YW5jZUlkIjoiYjY4ZTFmOWUtZTMxYS00NjgyLWFhZTUtNmFmM2UyOTgxOTk3IiwiYXBwRGVmSWQiOiIxMzVhYWQ4Ni05MTI1LTYwNzQtNzM0Ni0yOWRjNmEzYzliY2YiLCJzaWduRGF0ZSI6IjIwMTctMTEtMTFUMTU6MzE6NDAuNjExWiIsInVpZCI6bnVsbCwiaXBBbmRQb3J0IjoiMTgxLjYwLjE5Ni4xMTIvNTMxMzkiLCJ2ZW5kb3JQcm9kdWN0SWQiOm51bGwsImRlbW9Nb2RlIjpmYWxzZSwib3JpZ2luSW5zdGFuY2VJZCI6IjEzZTE3ZWIxLTBlN2YtZmU0MS0wNjhmLTYxYjlhYjI0MjgyMSIsImFpZCI6IjQ2YTlkZWI0LTljMTgtNDAyNi1iOGRhLTYwNDNiMTdjNTI3YSIsImJpVG9rZW4iOiJlMmY4OTQxZi1iMDJkLTBiODktMWJlZi1mYTE0Njg5MzVkNTUiLCJzaXRlT3duZXJJZCI6IjhhM2U2ZDE2LTczNWUtNDYxOC04YmU3LTk2NDY0M2QyM2ZjNyJ9&amp;locale=pt&amp;pageId=mainPage&amp;viewMode=site&amp;vsi=b6fb7f4e-66e5-4215-8806-8b9362c7e6f6&amp;width=255"></iframe><div id="TPWdgt0-6nzoverlay" class="TPWdgt0-6nz_hvyyl1k0overlay" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$mainPage_DESKTOP.$inlineContent.$TPWdgt0-6nz.$overlay"></div>
+	      </div>
 	        <div class="slider-block">
 	          <div class="slider"> <a href="#" class="prev"></a><a href="#" class="next"></a>
 	            <ul class="items">
 	              <li><img src="images/slide01.jpg" alt="">
 	                <div class="banner">
-	                  <div>HAY INNUMERABLES LUGARES</div>
+	                  <div>HAY MUCHOS LUGARES</div>
 	                  <br>
-	                  <span>para conocer en Colombia</span> </div>
+	                  <span>para conocerse en Colombia</span> </div>
 	              </li>
 	              <li><img src="images/slide02.jpg" alt=""></li>
 	              <li><img src="images/slide03.jpg" alt=""></li>
@@ -92,8 +95,9 @@
 	    </div>
 		
 	      <div class="grid_12">
-	        <h3>Destinos Principales</h3>
+	       
 	      </div>
+	       <h3>Destinos Principales</h3>
 	      <div class="boxes">
 	        <div class="grid_4">
 	          <figure>
@@ -129,44 +133,41 @@
 	      </div>
 	  
 		 <div class="bottom_block">
-    <div class="container_12">
-      <div class="grid_2 prefix_2">
-        <ul>
-          <li><a href="#">FAQS Page</a></li>
-          <li><a href="#">People Say</a></li>
-        </ul>
-      </div>
-      <div class="grid_2">
-        <ul>
-          <li><a href="#">Useful links</a></li>
-          <li><a href="#">Partners</a></li>
-        </ul>
-      </div>
-      <div class="grid_2">
-        <ul>
-          <li><a href="#">Insurance</a></li>
-          <li><a href="#">Family Travel</a></li>
-        </ul>
-      </div>
-      <div class="grid_2">
-        <h4>Contact Us:</h4>
-        TEL: 1-800-234-5678<br>
-        <a href="#">info@demolink.org</a> </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-</div>
-<footer>
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
-      <div class="copy"> Viaje Feliz &copy; 2017 | <a href="#">Privacy Policy</a> | Design by: Anna Carolina Novaes. </div>
-    </div>
-    <div class="clear"></div>
-  </div>
-</footer>
-	
+		    <div class="container_12">
+		      <div class="grid_2 prefix_2">
+		        <ul>
+		          <li><a href="#">FAQS Page</a></li>
+		          <li><a href="#">People Say</a></li>
+		        </ul>
+		      </div>
+		      <div class="grid_2">
+		        <ul>
+		          <li><a href="#">Useful links</a></li>
+		          <li><a href="#">Partners</a></li>
+		        </ul>
+		      </div>
+		      <div class="grid_2">
+		        <ul>
+		          <li><a href="#">Insurance</a></li>
+		          <li><a href="#">Family Travel</a></li>
+		        </ul>
+		      </div>
+		      <div class="grid_2">
+		        <h4>Contact Us:</h4>
+		        TEL: 1-800-234-5678<br>
+		        <a href="#">info@demolink.org</a> </div>
+		      <div class="clear"></div>
+		    </div>
+		  </div>
 		</div>
-	</div>
+		<footer>
+		  <div class="container_12">
+		    <div class="grid_12">
+		      <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+		      <div class="copy"> Viaje Feliz &copy; 2017 | <a href="#">Privacy Policy</a> | Design by: Anna Carolina Novaes. </div>
+		    </div>
+		    <div class="clear"></div>
+		  </div>
+		</footer>
 	</body>
 </html>

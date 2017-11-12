@@ -1,16 +1,18 @@
 package dominio;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity
 @Table(name="tb_cabanaocasa")
-
 
 public class CabanaOCasa implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -18,30 +20,38 @@ public class CabanaOCasa implements Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer codCabanaOCasa;
+	private String nombreCabanaOCasa;
+	private String ubicacionCabanaOCasa;
+	private Double precioDiariaCabanaOCasa;
+	private String fotoCabanaOCasa;
+	private boolean disponibleCabanaOCasa;
+	private String cuidadCabanaOCasa;
+	private Integer nroBanosCabanaOCasa;
+	private Integer nroHabitacionesCabanaOCasa;
 	
-	private String ubicacion;
-	private BigDecimal precioDiaria;
-	private String foto;
-	private boolean disponible;
-	private String cuidad;
-	private Integer nroBanos;
-	private Integer nroHabitaciones;
+	@ManyToOne
+	@JoinColumn(name = "arrendatario")
+	private Arrendatario arrendatario;
+	
+	@OneToMany(mappedBy = "cabanaOCasa")
+	private List<EncuestaSatisfacion> encuestasatisfacion;
 	
 	public CabanaOCasa() {
 		super();
 	}
 
-	public CabanaOCasa(Integer codCabanaOCasa, String ubicacion, BigDecimal precioDiaria, String foto,
-			boolean disponible, String cuidad, Integer nroBanos, Integer nroHabitaciones) {
+	public CabanaOCasa(Integer codCabanaOCasa, String nombreCabanaOCasa, Double precioDiariaCabanaOCasa, String fotoCabanaOCasa,
+			boolean disponibleCabanaOCasa, String ubicacionCabanaOCasa, String cuidadCabanaOCasa, Integer nroBanosCabanaOCasa, Integer nroHabitacionesCabanaOCasa) {
 		super();
-		this.codCabanaOCasa = codCabanaOCasa;
-		this.ubicacion = ubicacion;
-		this.precioDiaria = precioDiaria;
-		this.foto = foto;
-		this.disponible = disponible;
-		this.cuidad = cuidad;
-		this.nroBanos = nroBanos;
-		this.nroHabitaciones = nroHabitaciones;
+		this.codCabanaOCasa = codCabanaOCasa;	
+		this.nombreCabanaOCasa = nombreCabanaOCasa;
+		this.precioDiariaCabanaOCasa = precioDiariaCabanaOCasa;
+		this.fotoCabanaOCasa = fotoCabanaOCasa;
+		this.disponibleCabanaOCasa = disponibleCabanaOCasa;
+		this.ubicacionCabanaOCasa = ubicacionCabanaOCasa;
+		this.cuidadCabanaOCasa = cuidadCabanaOCasa;
+		this.nroBanosCabanaOCasa = nroBanosCabanaOCasa;
+		this.nroHabitacionesCabanaOCasa = nroHabitacionesCabanaOCasa;
 	}
 
 	public Integer getCodCabanaOCasa() {
@@ -52,60 +62,68 @@ public class CabanaOCasa implements Serializable {
 		this.codCabanaOCasa = codCabanaOCasa;
 	}
 
-	public String getUbicacion() {
-		return ubicacion;
+	public String getNombreCabanaOCasa() {
+		return nombreCabanaOCasa;
 	}
 
-	public void setUbicacion(String ubicacion) {
-		this.ubicacion = ubicacion;
+	public void setNombreCabanaOCasa(String nombreCabanaOCasa) {
+		this.nombreCabanaOCasa = nombreCabanaOCasa;
 	}
 
-	public BigDecimal getPrecioDiaria() {
-		return precioDiaria;
+	public String getUbicacionCabanaOCasa() {
+		return ubicacionCabanaOCasa;
 	}
 
-	public void setPrecioDiaria(BigDecimal precioDiaria) {
-		this.precioDiaria = precioDiaria;
+	public void setUbicacionCabanaOCasa(String ubicacionCabanaOCasa) {
+		this.ubicacionCabanaOCasa = ubicacionCabanaOCasa;
 	}
 
-	public String getFoto() {
-		return foto;
+	public Double getPrecioDiariaCabanaOCasa() {
+		return precioDiariaCabanaOCasa;
 	}
 
-	public void setFoto(String foto) {
-		this.foto = foto;
+	public void setPrecioDiariaCabanaOCasa(Double precioDiariaCabanaOCasa) {
+		this.precioDiariaCabanaOCasa = precioDiariaCabanaOCasa;
 	}
 
-	public boolean isDisponible() {
-		return disponible;
+	public String getFotoCabanaOCasa() {
+		return fotoCabanaOCasa;
 	}
 
-	public void setDisponible(boolean disponible) {
-		this.disponible = disponible;
+	public void setFotoCabanaOCasa(String fotoCabanaOCasa) {
+		this.fotoCabanaOCasa = fotoCabanaOCasa;
 	}
 
-	public String getCuidad() {
-		return cuidad;
+	public boolean isDisponibleCabanaOCasa() {
+		return disponibleCabanaOCasa;
 	}
 
-	public void setCuidad(String cuidad) {
-		this.cuidad = cuidad;
+	public void setDisponibleCabanaOCasa(boolean disponibleCabanaOCasa) {
+		this.disponibleCabanaOCasa = disponibleCabanaOCasa;
 	}
 
-	public Integer getNroBanos() {
-		return nroBanos;
+	public String getCuidadCabanaOCasa() {
+		return cuidadCabanaOCasa;
 	}
 
-	public void setNroBanos(Integer nroBanos) {
-		this.nroBanos = nroBanos;
+	public void setCuidadCabanaOCasa(String cuidadCabanaOCasa) {
+		this.cuidadCabanaOCasa = cuidadCabanaOCasa;
 	}
 
-	public Integer getNroHabitaciones() {
-		return nroHabitaciones;
+	public Integer getNroBanosCabanaOCasa() {
+		return nroBanosCabanaOCasa;
 	}
 
-	public void setNroHabitaciones(Integer nroHabitaciones) {
-		this.nroHabitaciones = nroHabitaciones;
+	public void setNroBanosCabanaOCasa(Integer nroBanosCabanaOCasa) {
+		this.nroBanosCabanaOCasa = nroBanosCabanaOCasa;
+	}
+
+	public Integer getNroHabitacionesCabanaOCasa() {
+		return nroHabitacionesCabanaOCasa;
+	}
+
+	public void setNroHabitacionesCabanaOCasa(Integer nroHabitacionesCabanaOCasa) {
+		this.nroHabitacionesCabanaOCasa = nroHabitacionesCabanaOCasa;
 	}
 
 	@Override
@@ -132,6 +150,5 @@ public class CabanaOCasa implements Serializable {
 			return false;
 		return true;
 	}
-	
 	
 }

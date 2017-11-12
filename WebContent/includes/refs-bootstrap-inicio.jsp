@@ -3,10 +3,10 @@
 
 
  <!--  Bootstrap core CSS -->
- <link href="<%=request.getContextPath()%>/resources/css/bootstrap.css" rel ="stylesheet">
+ <link href="<%=request.getContextPath()%>/css/bootstrap.css" rel ="stylesheet">
  
  <!-- Custom styles for this template -->
- <link href="<%=request.getContextPath()%>/resources/css/2.css" rel ="stylesheet">
+ <link href="<%=request.getContextPath()%>/css/2.css" rel ="stylesheet">
 
 
  

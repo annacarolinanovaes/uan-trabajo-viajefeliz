@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 @Entity
 @Table(name="tb_encuestasatisfacion")
@@ -21,6 +23,9 @@ public class EncuestaSatisfacion implements Serializable {
 	private Double nota;
 	private String descripcion;
 	
+	@ManyToOne
+	@JoinColumn(name = "cabanaocasa")
+	private CabanaOCasa cabanaocasa;
 	
 	public EncuestaSatisfacion() {
 		super();
