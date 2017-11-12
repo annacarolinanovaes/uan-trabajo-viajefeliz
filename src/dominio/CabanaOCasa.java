@@ -29,12 +29,12 @@ public class CabanaOCasa implements Serializable {
 	private Integer nroBanosCabanaOCasa;
 	private Integer nroHabitacionesCabanaOCasa;
 	
-	@ManyToOne
+	/*@ManyToOne
 	@JoinColumn(name = "arrendatario")
-	private Arrendatario arrendatario;
+	private Arrendatario arrendatario;*/
 	
-	@OneToMany(mappedBy = "cabanaOCasa")
-	private List<EncuestaSatisfacion> encuestasatisfacion;
+	/*@OneToMany(mappedBy = "cabanaOCasa")
+	private List<EncuestaSatisfacion> encuestasatisfacion;*/
 	
 	public CabanaOCasa() {
 		super();

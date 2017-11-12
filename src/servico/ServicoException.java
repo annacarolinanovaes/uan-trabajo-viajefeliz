@@ -1,4 +1,4 @@
-package servico.impl;
+package servico;
 
 public class ServicoException extends Exception {
 

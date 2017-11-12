@@ -1,11 +1,13 @@
 package dominio;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity
 @Table(name="tb_arrendatario")
@@ -21,6 +23,9 @@ public class Arrendatario implements Serializable {
 	private Integer cedulaCuidadania;
 	private String telefono;
 	private String correoElectronicoArrendatario;
+	
+	/*@OneToMany(mappedBy = "arrendatario")
+	private List<CabanaOCasa> cabanaocasa;*/
 	
 	public Arrendatario() {
 		super();

@@ -23,9 +23,9 @@ public class EncuestaSatisfacion implements Serializable {
 	private Double nota;
 	private String descripcion;
 	
-	@ManyToOne
+	/*@ManyToOne
 	@JoinColumn(name = "cabanaocasa")
-	private CabanaOCasa cabanaocasa;
+	private CabanaOCasa cabanaocasa;*/
 	
 	public EncuestaSatisfacion() {
 		super();

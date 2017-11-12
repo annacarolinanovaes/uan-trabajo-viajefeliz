@@ -3,6 +3,8 @@ package controller;
 import java.io.IOException;
 import java.util.List;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import dominio.CabanaOCasa;
 import servico.CabanaOCasaServico;
 import servico.ServicoFactory;
-import servico.impl.ServicoException;
+import servico.ServicoException;
 
 @WebServlet("/cliente/CabanaOCasaCRUD")
 public class CabanaOCasaCRUD extends HttpServlet {
@@ -67,6 +69,7 @@ public class CabanaOCasaCRUD extends HttpServlet {
 		
 		else if (cmd.equalsIgnoreCase("listar")) {
 			try {
+
 				request.setAttribute("lista", cabanaocasaServico.buscarTodos());
 				forward = LISTAR;
 			} catch (RuntimeException e) {
@@ -108,6 +111,7 @@ public class CabanaOCasaCRUD extends HttpServlet {
 		/*dependencia ClienteServico cliServico = ServicoFactory.criarClienteServico();*/
 		
 		String aux;
+		Boolean aux2 = true;
 		CabanaOCasa x = new CabanaOCasa();
 		
 		aux = req.getParameter("codCabanaOCasa");
@@ -124,10 +128,21 @@ public class CabanaOCasaCRUD extends HttpServlet {
 				aux = req.getParameter("ubicacionCabanaOCasa");
 				x.setUbicacionCabanaOCasa(aux);
 				
+				aux = req.getParameter("fotoCabanaOCasa");
+				x.setFotoCabanaOCasa(aux);
+				
+				aux = req.getParameter("disponibleCabanaOCasa");
+				x.setDisponibleCabanaOCasa(aux2);
+				
+				Integer nroBanosCabanaOCasa = Integer.parseInt(req.getParameter("nroBanosCabanaOCasa"));		
+				x.setNroBanosCabanaOCasa(nroBanosCabanaOCasa);
+				
+				Integer nroHabitacionesCabanaOCasa = Integer.parseInt(req.getParameter("nroHabitacionesCabanaOCasa"));		
+				x.setNroBanosCabanaOCasa(nroHabitacionesCabanaOCasa);
+				
 				Double precioDiaria = Double.parseDouble(req.getParameter("precioDiariaCabanaOCasa"));		
 				x.setPrecioDiariaCabanaOCasa(precioDiaria);
 				
 				return x;
 			}
-		
-	}
+}
