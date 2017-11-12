@@ -8,6 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import Modelo.Cabana;
+import Modelo.Titular;
 @Entity
 @Table(name="tb_alquiler")
 
@@ -20,17 +23,66 @@ public class Alquiler implements Serializable {
 	private Integer codAlquiler;
 	private Date fechaInicio;
 	private Date fechafin;
+	private Usuario titular;
+	private CabanaOCasa cabana;
+	private int cantidadPersonasAHospedar;
+	
+	
 	
 	public Alquiler() {
 		super();
 	}
 
-	public Alquiler(Integer codAlquiler, Date fechaInicio, Date fechafin) {
+	
+
+	public Alquiler(Integer codAlquiler, Date fechaInicio, Date fechafin, Usuario titular, CabanaOCasa cabana,
+			int cantidadPersonasAHospedar) {
 		super();
 		this.codAlquiler = codAlquiler;
 		this.fechaInicio = fechaInicio;
 		this.fechafin = fechafin;
+		this.titular = titular;
+		this.cabana = cabana;
+		this.cantidadPersonasAHospedar = cantidadPersonasAHospedar;
 	}
+
+
+
+	public Usuario getTitular() {
+		return titular;
+	}
+
+
+
+	public void setTitular(Usuario titular) {
+		this.titular = titular;
+	}
+
+
+
+	public CabanaOCasa getCabana() {
+		return cabana;
+	}
+
+
+
+	public void setCabana(CabanaOCasa cabana) {
+		this.cabana = cabana;
+	}
+
+
+
+	public int getCantidadPersonasAHospedar() {
+		return cantidadPersonasAHospedar;
+	}
+
+
+
+	public void setCantidadPersonasAHospedar(int cantidadPersonasAHospedar) {
+		this.cantidadPersonasAHospedar = cantidadPersonasAHospedar;
+	}
+
+
 
 	public Integer getCodAlquiler() {
 		return codAlquiler;

@@ -15,20 +15,47 @@ public class Usuario implements Serializable {
 	private String telefono;
 	private String correoelectronico;
 	private String contrasenha;
+	private String nacionalidad;
+	private String direccion;
+
 	
 	public Usuario(){
 		
 	}
 	
+
 	public Usuario(Integer codUsuario, String nombreUsuario, String telefono, String correoelectronico,
-			String contrasenha) {
+			String contrasenha, String nacionalidad, String direccion) {
 		super();
 		this.codUsuario = codUsuario;
 		this.nombreUsuario = nombreUsuario;
 		this.telefono = telefono;
 		this.correoelectronico = correoelectronico;
 		this.contrasenha = contrasenha;
+		this.nacionalidad = nacionalidad;
+		this.direccion = direccion;
 	}
+
+
+	public String getNacionalidad() {
+		return nacionalidad;
+	}
+
+
+	public void setNacionalidad(String nacionalidad) {
+		this.nacionalidad = nacionalidad;
+	}
+
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
 
 	public Integer getCodUsuario() {
 		return codUsuario;
