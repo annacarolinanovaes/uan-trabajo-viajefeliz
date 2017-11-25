@@ -1,0 +1,31 @@
+.buttonbusca{
+	background-color: #FFD700; 
+	border: none; 
+	color: #193149; 
+	font-style: bold;
+    text-transform: capitalize;
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding: 4px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input:required:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+input:required {
+	border: 1px solid blue;
+}
+input:valid {
+	border: 1px solid green;
+}
+input:invalid {
+	border: 1px solid red;
+}
