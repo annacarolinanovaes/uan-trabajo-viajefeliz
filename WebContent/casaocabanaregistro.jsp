@@ -77,7 +77,7 @@
 								<label for="nombreCabanaOCasa"> Nombre de la casa o cabaña </label> <input
 									type="text" name="nombreCabanaOCasa" value="${cabanaocasa.nombreCabanaOCasa}"
 									class="form-control" id="nombreCabanaOCasa"
-									placeholder="Introduzca el nombre de la casa o cabaña" /> <br />
+									required="required" placeholder="Introduzca el nombre de la casa o cabaña" /> <br />
 							</div>
 						</div>
 	
@@ -86,7 +86,7 @@
 								<label for="precioDiariaCabanaOCasa"> Precio diaria ($) </label> <input
 									type="text" name="precioDiariaCabanaOCasa" value="${cabanaocasa.precioDiariaCabanaOCasa}"
 									class="form-control" id="precioDiariaCabanaOCasa"
-									placeholder="Introduzca el precio diaria" /> <br />
+									required="required" placeholder="Introduzca el precio diaria" /> <br />
 							</div>
 						</div>
 	
@@ -94,7 +94,7 @@
 							<div class="form group col-md-6">
 								<label for="ubicacionCabanaOCasa"> Ubicación </label> <input type="text"
 									name="ubicacionCabanaOCasa" value="${cabanaocasa.ubicacionCabanaOCasa}" class="form-control"
-									id="ubicacionCabanaOCasa" placeholder="Introduzca la ubicación"/> <br />
+									required="required" id="ubicacionCabanaOCasa" placeholder="Introduzca la ubicación"/> <br />
 							</div>
 						</div>
 	
@@ -102,7 +102,7 @@
 							<div class="form group col-md-6">
 								<label for="ciudadCabanaOCasa"> Cuidad </label> <input type="text"
 									name="ciudadCabanaOCasa" value="${cabanaocasa.ciudadCabanaOCasa}" class="form-control"
-									id="ciudadCabanaOCasa" placeholder="Introduzca la cuidad" /> <br />
+									required="required" id="ciudadCabanaOCasa" placeholder="Introduzca la cuidad" /> <br />
 							</div>
 						</div>
 						
@@ -117,7 +117,7 @@
 							<div class="form group col-md-6">
 								<label for="nroBanosCabanaOCasa"> Cantidad de banos </label> <input type="text"
 									name="nroBanosCabanaOCasa" value="${cabanaocasa.nroBanosCabanaOCasa}"
-									class="form-control" id="nroBanosCabanaOCasa" placeholder="Introduzca la cantidad de banos"/> <br />
+									required="required" class="form-control" id="nroBanosCabanaOCasa" placeholder="Introduzca la cantidad de banos"/> <br />
 							</div>
 						</div>
 	
@@ -125,7 +125,7 @@
 							<div class="form group col-md-6">
 								<label for="nroHabitacionesCabanaOCasa"> Cantidad de habitaciones </label> <input type="text"
 									name="nroHabitacionesCabanaOCasa" value="${cabanaocasa.nroHabitacionesCabanaOCasa}" class="form-control"
-									id="nroHabitacionesCabanaOCasa" placeholder="Introduzca la cantidad de habitaciones"/> <br />
+									required="required" id="nroHabitacionesCabanaOCasa" placeholder="Introduzca la cantidad de habitaciones"/> <br />
 							</div>
 						</div>
 						
@@ -133,7 +133,7 @@
 							<div class="form group col-md-6">
 								<label for="arrendatario"> Código del arrendatario seleccionado: </label> <input type="text"
 									name="codArrendatario" value="${cabanaocasa.arrendatario.codArrendatario}"
-									class="form-control" id="codArrendatario"/> <br />
+									required="required" class="form-control" id="codArrendatario"/> <br />
 							</div>
 						</div>
 						

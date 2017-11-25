@@ -69,8 +69,6 @@
 								<label for="codArrendatario"> Código del arrendatario: </label> <input type="text"
 									name="codArrendatario" value="${arrendatario.codArrendatario}"
 									class="form-control" id="codArrendatario" readonly="readonly" /> <br />
-										private Integer cedulaCuidadania;
-
 							</div>
 						</div> 
 	
@@ -79,7 +77,7 @@
 								<label for="nombreArrendatario"> Nombre del arrendatario </label> <input
 									type="text" name="nombreArrendatario" value="${arrendatario.nombreArrendatario}"
 									class="form-control" id="nombreArrendatario"
-									placeholder="Introduzca el nombre de la casa o cabaña" /> <br /> 
+									required="required" placeholder="Introduzca el nombre de la casa o cabaña" /> <br /> 
 							</div>
 						</div>
 						
@@ -87,7 +85,7 @@
 							<div class="form group col-md-6">
 								<label for="cedulaCuidadania"> Cedula de cuidadania </label> <input type="text"
 									name="cedulaCuidadania" value="${arrendatario.cedulaCuidadania}"
-									class="form-control" id="cedulaCuidadania" placeholder="Introduzca la cedula de cuidadania"/> <br />
+									required="required" class="form-control" id="cedulaCuidadania" placeholder="Introduzca la cedula de cuidadania"/> <br />
 							</div>
 						</div>
 						
@@ -95,7 +93,7 @@
 							<div class="form group col-md-6">
 								<label for="nacionalidadArrendatario"> Nacionalidad </label> <input type="text"
 									name="nacionalidadArrendatario" value="${arrendatario.nacionalidadArrendatario}"
-									class="form-control" id="nacionalidadArrendatario" placeholder="Introduzca la nacionalidad"/> <br />
+									required="required" class="form-control" id="nacionalidadArrendatario" placeholder="Introduzca la nacionalidad"/> <br />
 							</div>
 						</div>
 						
@@ -103,7 +101,7 @@
 							<div class="form group col-md-6">
 								<label for="direccionResidenciaArrendatario"> Dirección residencia </label> <input type="text"
 									name="direccionResidenciaArrendatario" value="${arrendatario.direccionResidenciaArrendatario}" class="form-control"
-									id="direccionResidenciaArrendatario" placeholder="Introduzca la dirección" /> <br />
+									required="required" id="direccionResidenciaArrendatario" placeholder="Introduzca la dirección" /> <br />
 							</div>
 						</div>		
 	
@@ -112,7 +110,7 @@
 								<label for="telefono"> Teléfono </label> <input
 									type="text" name="telefono" value="${arrendatario.telefono}"
 									class="form-control" id="telefono"
-									placeholder="Introduzca el teléfono" /> <br />
+									required="required" placeholder="Introduzca el teléfono" /> <br />
 							</div>
 						</div>
 	
@@ -120,7 +118,7 @@
 							<div class="form group col-md-6">
 								<label for="correoElectronicoArrendatario"> Correo electronico </label> <input type="text"
 									name="correoElectronicoArrendatario" value="${arrendatario.correoElectronicoArrendatario}" class="form-control"
-									id="correoElectronicoArrendatario" placeholder="Introduzca su correo electronico"/> <br />
+									required="required" id="correoElectronicoArrendatario" placeholder="Introduzca su correo electronico"/> <br />
 							</div>
 						</div>
 						
@@ -128,7 +126,7 @@
 							<div class="form group col-md-6">
 								<label for="contrasenhaArrendatario"> Contrasenha </label> <input type="password"
 									name="contrasenhaArrendatario" value="${arrendatario.contrasenhaArrendatario}"
-									class="form-control" id="contrasenhaArrendatario" placeholder="Introduzca su contrasenha"/> <br />
+									required="required" class="form-control" id="contrasenhaArrendatario" placeholder="Introduzca su contrasenha"/> <br />
 							</div>
 						</div>
 	
